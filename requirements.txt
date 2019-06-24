@@ -1,3 +1,4 @@
 Flask==1.0.3
 Flask-Bootstrap==3.3.7.1
 Flask-WTF==0.14.2
+git+https://github.com/dk-ml/rock_paper_scissors.git@616b18a067219dccacebddb63c5ec442c332fec7
