@@ -2,9 +2,9 @@
 from setuptools import find_packages, setup
 
 
-NAME = "rock_paper_scissors"
+NAME = "rock_paper_scissors_app"
 VERSION = "0.0.1"
-URL = "https://github.com/dk-ml/rock_paper_scissors"
+URL = "https://github.com/dk-ml/rock_paper_scissors_app"
 
 
 with open(file="requirements.txt", mode="r") as file:
