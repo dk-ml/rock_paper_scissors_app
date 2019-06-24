@@ -1,0 +1,30 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<div>Choose your move! ROCK, PAPER, or SCISSORS?</div>
+
+<form method="post" class="form form-horizontal" enctype=multipart/form-data>
+    {{ wtf.form_field(form.move, form_type="horizontal",)}}
+    <div><input type="submit" value=Submit id="submit"></div>
+</form>
+
+{% if result %}
+
+<div>
+
+    Your opponent chose {{ result.opponent_move }}. <br>
+    Did you win? {{ result.is_winner }}
+
+</div>
+
+{% endif %}
+
+</body>
+</html>
